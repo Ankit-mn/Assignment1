@@ -1,0 +1,46 @@
+package Assignment1Day2;
+
+public class ConstructorAssign {
+	String shapes;
+	float area;
+	String sides;
+	ConstructorAssign() {
+		 System.out.println("Default constructor");
+		 }
+	
+	
+	
+	ConstructorAssign(float x){
+		System.out.println("Area of the Square: "+ x * x);
+	}
+	ConstructorAssign(float x, float y){
+		System.out.println("Area of the rectangle: " + x * y);
+		
+	}
+	ConstructorAssign(double x){
+		
+		System.out.println("The area of the circle is:"+3.14*x*x);
+	}
+	
+	void display() {
+		System.out.println(shapes+" "+area);
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ConstructorAssign s1= new ConstructorAssign(5);
+		ConstructorAssign s2= new ConstructorAssign(5,6);
+		ConstructorAssign s3= new ConstructorAssign(8.6);
+		
+	}
+
+}
+class triangle {
+	long area;
+    triangle(long b,long h)
+  {
+  
+  }
+    void display() {
+		System.out.println(" "+area);
+}
+}
