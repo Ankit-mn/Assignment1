@@ -1,0 +1,22 @@
+package Assignment1Day2;
+
+public class Areee {
+	int calculate(int x,int y) {
+		System.out.println("add the two number:");
+		return (x+y);
+		
+	}
+float calculate(float r) {
+	System.out.println("Area of circle is:");
+	return(22*r*r)/7;
+}
+ int calculate1(int l,int b) {
+	 System.out.println("Area of rectangle:");
+	return(l*b);
+}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
