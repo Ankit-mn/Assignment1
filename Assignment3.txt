@@ -1,0 +1,42 @@
+package Assignment1Day2;
+
+public class StudentCons 
+{
+	String name;
+	int age;
+	char section;
+	char gender;
+	float physics,chemistry,maths;
+	float totalmarks,percentages;
+	 StudentCons(String name,int age,char gender,char section,float totalmarks,float percentages,float physics,float chemistry,float maths)
+	 {
+		 this.name=name;
+		 this.age=age;
+		 this.gender=gender;
+		 this.section=section;
+		 this.totalmarks=totalmarks;
+		 this.percentages=percentages;
+		 this.physics=physics;
+		 this.chemistry=chemistry;
+		 this.maths=maths;
+	 }
+void display()
+{
+	System.out.println("---name-----"+name+"total marks="+(totalmarks=physics+chemistry+maths)+"percentages");
+}
+
+	public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+		StudentCons s1=new StudentCons("Tom" ,22,'b','m', 70f, 60.5f,72.6f,65f,80f);
+		StudentCons s2=new StudentCons("Dom" ,24,'a','m', 89f, 70.2f,65.2f,56.4f,56);
+		StudentCons s3=new StudentCons("Rom" ,21,'d','m', 75f, 60.6f,80f,74,64);
+		StudentCons s4=new StudentCons("Wom" ,25,'c','m', 63f, 50, 71,62,84);
+		s1.display();
+		s2.display();
+		s3.display();
+		s4.display();
+		
+	}
+
+}
