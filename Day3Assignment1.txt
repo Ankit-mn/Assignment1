@@ -1,0 +1,184 @@
+package Opps;
+
+
+public class VehicleA {
+
+void run()
+{
+	System.out.println("vehicle is running");
+}
+void stop()
+{
+	System.out.println("vehicle is stopped");
+}
+void fuel(int i)
+{
+	i=100;
+	System.out.println("we are innside the fuel:="+i);
+}
+ void fuel(float f, String name)
+{
+	 name="f";
+	 f=72.5f;
+	System.out.println("value of float and string:="+f+""+name);
+}
+ void fuel(char p ,int i)
+{
+	 p='y';
+	 i=30;
+	System.out.println("print the values of:="+p+""+i);
+}
+
+ void Vehicle()
+ {
+	 System.out.println("default const");
+ }
+ int speed=60;
+ long distance=200;
+ void Vehicle(int speed,long distance){
+	 this.speed=speed;
+	 this.distance=distance;
+ }
+ 
+ }
+
+class Twowheeler extends VehicleA
+{
+	void run()
+	{
+		System.out.println("run the vehicle");
+	}
+	void stop() {
+		System.out.println(" stop the vehicle");
+	}
+ Twowheeler()
+	{
+		super();
+		System.out.println("inside the two wheeler:="+super.speed+""+super.distance);
+	}
+	 
+	
+	int speed = 50;
+	long distance = 130;
+	int no_of_tyre=2;
+	
+	
+void display() {
+	System.out.println(speed+" "  +distance+no_of_tyre);
+}
+
+
+
+
+	
+	class Threewheeler extends VehicleA
+	{
+		void run()
+		{
+			System.out.println("vehicle run");
+		}
+		void stop() {
+			System.out.println("stop vehicle");
+		}
+		Threewheeler(){
+			super();
+			System.out.println("super.speed+super.distance");
+		}
+		int speed = 50;
+		long distance = 130;
+		int no_of_tyre=3;
+		
+		
+	
+	void display() {
+		System.out.println(speed+" "  +distance+no_of_tyre);
+	}
+	}
+	class Fourwheeler extends VehicleA
+	{
+		void run()
+		{
+			System.out.println("vehicle run");
+		}
+		void stop() {
+			System.out.println("stop vehicle");
+		}
+		Fourwheeler(){
+			super();
+			System.out.println("super.speed+super.distance");
+		}
+		int speed = 50;
+		long distance = 230;
+		int no_of_tyre=4;
+		
+		
+	void display() {
+		System.out.println(speed+" "  +distance+no_of_tyre);
+					
+					
+					
+				}
+			}
+	class Eightwheeler extends VehicleA
+	{
+		void run()
+		{
+			System.out.println("vehicle run");
+		}
+		void stop() {
+			System.out.println("stop vehicle");
+		}
+		Eightwheeler(){
+			super();
+			System.out.println("super.speed+super.distance");
+		}
+		int speed = 90;
+		long distance = 130;
+		int no_of_tyre=8;
+		
+		
+	
+	void display() {
+		System.out.println(speed+" "  +distance+no_of_tyre);
+		             }
+	
+
+	 public void main(String[]args) {
+		 VehicleA o=new VehicleA();
+		 o.run();
+		 o.stop();
+		 o.fuel(25);
+		 o.fuel('g',65);
+		 o.fuel(55.5f,"power");
+		 System.out.println("two wheeler");
+		 
+		 Twowheeler s=new Twowheeler();
+		 s.run();
+		 s.stop();
+		 s.display();
+		 
+		 System.out.println("three wheeler");
+		 
+		 Threewheeler s3=new Threewheeler();
+		 s3.run();
+		 s3.stop();
+		 s3.display();
+		 
+		 System.out.println("four wheeler");
+		 Fourwheeler s4=new Fourwheeler();
+		 s4.run();
+		 s4.stop();
+		 s4.display();
+		 System.out.println("Eight wheeler");
+		 Eightwheeler s8=new Eightwheeler();
+		 s8.run();
+		 s8.stop();
+		 s8.display();
+	 }
+	
+	}
+}
+	
+
+
+
