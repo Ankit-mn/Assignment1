@@ -1,0 +1,188 @@
+package P1;
+
+ public class CiscoM {
+	 
+private int age=32;
+long distance=4549766L;	
+protected float pi=3.4f;
+
+public void methodDefault() 
+{ 
+	System.out.println("The distance is " + distance);
+}
+public void methodProtected() 
+{  
+	System.out.println("The value of pi is " + pi);
+}
+
+public void methodPublic()
+{
+	methodPrivate();
+}
+
+private void methodPrivate() 
+{ 
+    System.out.println("The value of a is " + age);
+}
+
+ }
+
+
+
+
+package P1;
+
+public class CiscoN {
+
+	
+		// TODO Auto-generated method stub
+
+		protected long b =1234569874899l;
+		public int number =20;
+		 double measure=563.14;
+		
+		 public void methodProtected() 
+		    {  
+				System.out.println("The value of long is : " + b);
+			}
+
+			public void methodPublic()
+			{           
+				System.out.println("The value of number is : " + number);
+			}
+
+			public void methodDefault() 
+			{   
+				System.out.println("The value of measure is : " + measure);
+			}
+
+}
+
+package P1;
+
+public class CiscoP {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		new CiscoM().methodPublic();
+		new CiscoM().methodProtected();
+		
+		new CiscoM().methodDefault();
+		
+		
+System.out.println(" Value of long"+ new CiscoM().distance);
+System.out.println(" Value of protected float"+ new CiscoM().pi);
+
+
+
+
+    System.out.println();
+
+	new CiscoN().methodDefault();
+	
+	new CiscoN().methodProtected();
+	
+	new CiscoN().methodPublic();
+
+	}
+
+}
+
+
+package P2;
+
+public class CiscoX {
+
+	
+		private int age =32;
+		long c =2982312345l;
+		protected float pi =8.22f;
+		public char gender ='M';
+
+		 public void methodPublic() {
+			 System.out.println("gender is:="+gender);
+				
+	}
+		 protected void methodProtected() {
+			 System.out.println("value of pi is:="+pi);
+		 }
+		 void methodDefault() {
+			 System.out.println("the long value is :="+c);
+		 }
+        private void methodPrivate()
+        {
+        	System.out.println("age is:="+age);
+        }
+}
+
+
+
+
+package P2;
+
+import P1.CiscoM;
+import P1.CiscoN;
+public class CiscoY {
+	
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		new CiscoM().methodPublic();
+		new CiscoM().methodProtected();
+		
+		new CiscoM().methodDefault();
+		System.out.println();
+	
+
+
+
+new CiscoN().methodDefault();
+
+new CiscoN().methodProtected();
+
+new CiscoN().methodPublic();
+System.out.println();{
+	new CiscoX().methodDefault();
+	new CiscoX().methodProtected();
+	new CiscoX().methodPublic();
+}
+
+}
+
+}
+
+
+
+
+package P2;
+import P1.CiscoN;
+
+import P1.CiscoM;
+
+public class CiscoZ {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		new CiscoM().methodPublic();
+		new CiscoM().methodProtected();
+		
+		new CiscoM().methodDefault();
+		System.out.println();
+	
+
+
+
+new CiscoN().methodDefault();
+
+new CiscoN().methodProtected();
+
+new CiscoN().methodPublic();
+System.out.println();{
+	new CiscoX().methodDefault();
+	new CiscoX().methodProtected();
+	new CiscoX().methodPublic();
+	}
+
+	}
+	}
